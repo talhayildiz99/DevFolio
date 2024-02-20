@@ -7,11 +7,12 @@
 <h2>Yeni Referans Girişi</h2>
 
 <form method="post">
-    <label>İsim</label>
+    <label>Referans Adı Soyadı</label>
     @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
     <br />
     <label>Yorumu</label>
     @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
     <label>Fotoğraf</label>
     @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
     <br />

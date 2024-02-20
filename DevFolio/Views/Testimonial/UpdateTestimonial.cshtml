@@ -5,11 +5,11 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-<h2>Referans Güncellem</h2>
+<h2>Referans Güncelleme Sayfası</h2>
 
 <form method="post">
     @Html.HiddenFor(x => x.TestimonialId, new { @class = "form-control" })
-    <label>İsim</label>
+    <label>Referans Adı Soyadı</label>
     @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
     <br />
     <label>Yorumu</label>
