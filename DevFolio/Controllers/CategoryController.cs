@@ -44,5 +44,14 @@ namespace DevFolio.Controllers
             var value = db.TblCategory.Find(id);
             return View(value);
         }
+
+        [HttpPost]
+        public ActionResult UpdateCategory(TblCategory p)
+        {
+            var value = db.TblCategory.Find(p.CategoryId);
+            value.CategoryName = p.CategoryName;
+            db.SaveChanges();
+            return RedirectToAction("CategoryList");
+        }
     }
 }

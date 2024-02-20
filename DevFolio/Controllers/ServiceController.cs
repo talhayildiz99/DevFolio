@@ -45,5 +45,16 @@ namespace DevFolio.Controllers
             var value = db.TblService.Find(id);
             return View(value);
         }
+
+        [HttpPost]
+        public ActionResult UpdateService(TblService p)
+        {
+            var value = db.TblService.Find(p.ServiceId);
+            value.ServiceTitle = p.ServiceTitle;
+            value.Description = p.Description;
+            value.ServiceImageUrl = p.ServiceImageUrl;
+            db.SaveChanges();
+            return RedirectToAction("ServiceList");
+        }
     }
 }

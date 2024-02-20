@@ -44,5 +44,17 @@ namespace DevFolio.Controllers
             var value = db.TblAdress.Find(id);
             return View(value);
         }
+
+        [HttpPost]
+        public ActionResult UpdateAddress(TblAdress p)
+        {
+            var value = db.TblAdress.Find(p.AdressId);
+            value.Description = p.Description;
+            value.Location = p.Location;
+            value.PhoneNumber = p.PhoneNumber;
+            value.Email = p.Email;
+            db.SaveChanges();
+            return RedirectToAction("AdressList");
+        }
     }
 }

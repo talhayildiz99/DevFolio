@@ -44,5 +44,15 @@ namespace DevFolio.Controllers
             var value = db.TblSkill.Find(id);
             return View(value);
         }
+
+        [HttpPost]
+        public ActionResult UpdateSkill(TblSkill p)
+        {
+            var value = db.TblSkill.Find(p.SkillID);
+            value.SkillTitle = p.SkillTitle;
+            value.SkillValue = p.SkillValue;
+            db.SaveChanges();
+            return RedirectToAction("SkillList");
+        }
     }
 }

@@ -44,5 +44,17 @@ namespace DevFolio.Controllers
             return View(value);
         }
 
+        [HttpPost]
+        public ActionResult UpdateSocialMedia(TblSocailMedia p)
+        {
+            var value = db.TblSocailMedia.Find(p.SocailMediaId);
+            value.PlatformName = p.PlatformName;
+            value.RedirectUrl = p.RedirectUrl;
+            value.Status = p.Status;
+            value.IconUrl = p.IconUrl;
+            db.SaveChanges();
+            return RedirectToAction("SocialMediaList");
+        }
+
     }
 }
