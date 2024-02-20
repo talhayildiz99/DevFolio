@@ -381,10 +381,12 @@
     <Content Include="Views\Category\CategoryList.cshtml" />
     <Content Include="Views\Category\CreateCategory.cshtml" />
     <Content Include="Views\Category\UpdateCategory.cshtml" />
+    <Content Include="Views\About\AboutList.cshtml" />
+    <Content Include="Views\About\CreateAbout.cshtml" />
+    <Content Include="Views\About\UpdateAbout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\About\" />
     <Folder Include="Views\Adress\" />
     <Folder Include="Views\Feature\" />
     <Folder Include="Views\Profile\" />
