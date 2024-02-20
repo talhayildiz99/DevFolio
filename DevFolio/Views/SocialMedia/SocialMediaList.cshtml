@@ -22,10 +22,10 @@
             <td>@item.SocailMediaId</td>
             <td>@item.PlatformName</td>
             <td>@item.Status</td>
-            <td><a href="#" class="btn btn-danger">Sil</a></td>
-            <td><a href="#" class="btn btn-success">Güncelle</a></td>
+            <td><a href="/SocialMedia/DeleteSocialMedia/@item.SocailMediaId" class="btn btn-danger">Sil</a></td>
+            <td><a href="/SocialMedia/UpdateSocialMedia/@item.SocailMediaId" class="btn btn-success">Güncelle</a></td>
         </tr>
      }
 
 </table>
-<a href="#" class="btn btn-info">Yeni Sosyal Medya Girişi</a>
+<a href="/SocialMedia/CreateSocialMedia/" class="btn btn-info">Yeni Sosyal Medya Girişi</a>
