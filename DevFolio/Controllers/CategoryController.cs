@@ -9,7 +9,7 @@ namespace DevFolio.Controllers
 {
     public class CategoryController : Controller
     {
-        DbDevFolioEntities db = new DbDevFolioEntities();
+        DbDevFolioEntities1 db = new DbDevFolioEntities1();
         public ActionResult CategoryList()
         {
             var values = db.TblCategory.ToList();

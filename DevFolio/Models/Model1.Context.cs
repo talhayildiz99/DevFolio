@@ -13,10 +13,10 @@ namespace DevFolio.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DbDevFolioEntities : DbContext
+    public partial class DbDevFolioEntities1 : DbContext
     {
-        public DbDevFolioEntities()
-            : base("name=DbDevFolioEntities")
+        public DbDevFolioEntities1()
+            : base("name=DbDevFolioEntities1")
         {
         }
     

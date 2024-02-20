@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DevFolio.Models;
 
 namespace DevFolio.Controllers
 {
     public class TestimonialController : Controller
     {
-        DbDevFolioEntities db = new DbDevFolioEntities();
+        DbDevFolioEntities1 db = new DbDevFolioEntities1();
         public ActionResult TestimonialList()
         {
             var values = db.TblTestimonial.ToList();

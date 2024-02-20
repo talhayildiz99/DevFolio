@@ -9,7 +9,7 @@ namespace DevFolio.Controllers
 {
     public class AboutController : Controller
     {
-        DbDevFolioEntities db = new DbDevFolioEntities();
+        DbDevFolioEntities1 db = new DbDevFolioEntities1();
         public ActionResult AboutList()
         {
             var values = db.TblAbout.ToList();

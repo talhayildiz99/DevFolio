@@ -119,9 +119,9 @@
             <PropertyRef Name="TestimonialId" />
           </Key>
           <Property Name="TestimonialId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="NameSurname" Type="varbinary" MaxLength="50" />
+          <Property Name="NameSurname" Type="varchar" MaxLength="50" />
           <Property Name="Description" Type="varchar" MaxLength="200" />
-          <Property Name="ImageUrl" Type="varbinary" MaxLength="250" />
+          <Property Name="ImageUrl" Type="varchar" MaxLength="250" />
           <Property Name="Status" Type="bit" />
         </EntityType>
         <Association Name="FK_TblProject_TblCategory">
@@ -276,9 +276,9 @@
             <PropertyRef Name="TestimonialId" />
           </Key>
           <Property Name="TestimonialId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="NameSurname" Type="Binary" MaxLength="50" FixedLength="false" />
+          <Property Name="NameSurname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-          <Property Name="ImageUrl" Type="Binary" MaxLength="250" FixedLength="false" />
+          <Property Name="ImageUrl" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="Status" Type="Boolean" />
         </EntityType>
         <Association Name="FK_TblProject_TblCategory">
@@ -293,7 +293,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DbDevFolioEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DbDevFolioEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="TblAbout" EntityType="Self.TblAbout" />
           <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" />
@@ -317,7 +317,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DbDevFolioModelStoreContainer" CdmEntityContainer="DbDevFolioEntities">
+        <EntityContainerMapping StorageEntityContainer="DbDevFolioModelStoreContainer" CdmEntityContainer="DbDevFolioEntities1">
           <EntitySetMapping Name="sysdiagrams">
             <EntityTypeMapping TypeName="DbDevFolioModel.sysdiagrams">
               <MappingFragment StoreEntitySet="sysdiagrams">

@@ -9,7 +9,7 @@ namespace DevFolio.Controllers
 {
     public class SocialMediaController : Controller
     {
-        DbDevFolioEntities db = new DbDevFolioEntities();
+        DbDevFolioEntities1 db = new DbDevFolioEntities1();
         public ActionResult SocialMediaList()
         {
             var values = db.TblSocailMedia.ToList();

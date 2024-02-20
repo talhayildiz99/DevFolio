@@ -9,7 +9,7 @@ namespace DevFolio.Controllers
 {
     public class ServiceController : Controller
     {
-        DbDevFolioEntities db = new DbDevFolioEntities();
+        DbDevFolioEntities1 db = new DbDevFolioEntities1();
         public ActionResult ServiceList()
         {
             var values = db.TblService.ToList();

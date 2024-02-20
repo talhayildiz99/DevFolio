@@ -9,7 +9,7 @@ namespace DevFolio.Controllers
 {
     public class ProfileController : Controller
     {
-        DbDevFolioEntities db = new DbDevFolioEntities();
+        DbDevFolioEntities1 db = new DbDevFolioEntities1();
         public ActionResult ProfileList()
         {
             var values = db.TblProfile.ToList();

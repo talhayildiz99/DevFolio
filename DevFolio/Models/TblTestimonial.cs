@@ -15,9 +15,9 @@ namespace DevFolio.Models
     public partial class TblTestimonial
     {
         public int TestimonialId { get; set; }
-        public byte[] NameSurname { get; set; }
+        public string NameSurname { get; set; }
         public string Description { get; set; }
-        public byte[] ImageUrl { get; set; }
+        public string ImageUrl { get; set; }
         public Nullable<bool> Status { get; set; }
     }
 }

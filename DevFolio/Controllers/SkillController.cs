@@ -9,7 +9,7 @@ namespace DevFolio.Controllers
 {
     public class SkillController : Controller
     {
-        DbDevFolioEntities db = new DbDevFolioEntities();
+        DbDevFolioEntities1 db = new DbDevFolioEntities1();
         public ActionResult SkillList()
         {
             var values = db.TblSkill.ToList();
