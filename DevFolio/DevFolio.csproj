@@ -443,9 +443,7 @@
     <Content Include="Views\AdminLayout\SidebarPartial.cshtml" />
     <Content Include="Views\AdminLayout\NavbarPartial.cshtml" />
     <Content Include="Views\AdminLayout\ScriptPartial.cshtml" />
-    <Content Include="Views\Project\Index.cshtml" />
     <Content Include="Views\Service\ServiceList.cshtml" />
-    <Content Include="Views\Project\CreateProject.cshtml" />
     <Content Include="Views\SocialMedia\SocialMediaList.cshtml" />
     <Content Include="Views\Skill\SkillList.cshtml" />
     <Content Include="Views\Skill\CreateSkill.cshtml" />
@@ -502,6 +500,9 @@
     <Content Include="Views\Feature\FeatureList.cshtml" />
     <Content Include="Views\Feature\CreateFeature.cshtml" />
     <Content Include="Views\Feature\UpdateFeature.cshtml" />
+    <Content Include="Views\Project\ProjectList.cshtml" />
+    <Content Include="Views\Project\CreateProject.cshtml" />
+    <Content Include="Views\Project\UpdateProject.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
