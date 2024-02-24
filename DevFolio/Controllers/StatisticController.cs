@@ -20,6 +20,7 @@ namespace DevFolio.Controllers
             ViewBag.coreCategoryProjectCount = db.TblProject.Where(x => x.ProjectCategory == 1).Count();
             ViewBag.unreadMessages = db.TblContact.Where(x => x.IsRead == false).Count();
             ViewBag.bestSkillTitleName = db.GetBestSkillTitle().FirstOrDefault();
+            ViewBag.testimonialCount = db.TblTestimonial.Count();
             return View();
         }
     }
