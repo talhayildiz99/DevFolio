@@ -24,7 +24,7 @@ namespace DevFolio.Controllers
             var bilgi = db.TblAdmin.FirstOrDefault(x => x.Username == p.Username && x.Password == p.Password);
             if (bilgi != null)
             {
-                return RedirectToAction("Index", "AdminLayout");
+                return RedirectToAction("AboutList", "About");
             }
             else
             {
