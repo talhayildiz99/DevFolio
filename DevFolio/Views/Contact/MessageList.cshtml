@@ -1,0 +1,39 @@
+﻿@model List<DevFolio.Models.TblContact>
+@{
+    ViewBag.Title = "MessageList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Gelen Mesajlar Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Gönderen</th>
+        <th>Konu</th>
+        <th>Email</th>
+        <th>Okundu Bilgisi</th>
+        <th>Mesajı Aç</th>
+        <th>Sil</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        var OkunduMu = "Okunmadı";
+        if (item.IsRead == true)
+        {
+            OkunduMu = "Okundu";
+        }
+        <tr>
+            <th>@item.ContactId</th>
+            <th>@item.NameSurname</th>
+            <th>@item.Subject</th>
+            <th>@item.Email</th>
+            <th>
+                @OkunduMu
+            </th>
+            <th><a href="/Contact/OpenMessage/@item.ContactId" class="btn btn-success">Mesajı Aç</a></th>
+            <th><a href="/Contact/DeleteMessage/@item.ContactId" class="btn btn-danger">Sil</a></th>
+        </tr>
+    }
+</table>

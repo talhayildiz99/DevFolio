@@ -339,7 +339,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Templates\sidebar-01\.DS_Store" />
     <Content Include="Templates\sidebar-01\css\.DS_Store" />
     <Content Include="Templates\sidebar-01\css\bootstrap\.DS_Store" />
@@ -498,6 +497,8 @@
     <Content Include="Views\Default\PartialContact.cshtml" />
     <Content Include="Views\Default\PartialAddress.cshtml" />
     <Content Include="Views\Default\PartialSocial.cshtml" />
+    <Content Include="Views\Contact\MessageList.cshtml" />
+    <Content Include="Views\Contact\OpenMessage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
