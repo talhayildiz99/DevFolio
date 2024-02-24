@@ -325,6 +325,7 @@
     <Content Include="Templates\sidebar-01\js\jquery.min.js" />
     <Content Include="Templates\sidebar-01\js\main.js" />
     <Content Include="Templates\sidebar-01\js\popper.js" />
+    <Content Include="Templates\sidebar-01\images\profile.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
