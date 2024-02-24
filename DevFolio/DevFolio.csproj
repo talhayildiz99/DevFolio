@@ -499,10 +499,12 @@
     <Content Include="Views\Default\PartialSocial.cshtml" />
     <Content Include="Views\Contact\MessageList.cshtml" />
     <Content Include="Views\Contact\OpenMessage.cshtml" />
+    <Content Include="Views\Feature\FeatureList.cshtml" />
+    <Content Include="Views\Feature\CreateFeature.cshtml" />
+    <Content Include="Views\Feature\UpdateFeature.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Feature\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
