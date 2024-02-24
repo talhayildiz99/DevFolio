@@ -490,6 +490,14 @@
     <Content Include="Views\Default\PartialFeature.cshtml" />
     <Content Include="Views\Default\PartialProfile.cshtml" />
     <Content Include="Views\Default\PartialSkill.cshtml" />
+    <Content Include="Views\Default\PartialAbout.cshtml" />
+    <Content Include="Views\Default\PartialService.cshtml" />
+    <Content Include="Views\Default\PartialStatistic.cshtml" />
+    <Content Include="Views\Default\PartialPortfolio.cshtml" />
+    <Content Include="Views\Default\PartialTestimonial.cshtml" />
+    <Content Include="Views\Default\PartialContact.cshtml" />
+    <Content Include="Views\Default\PartialAddress.cshtml" />
+    <Content Include="Views\Default\PartialSocial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

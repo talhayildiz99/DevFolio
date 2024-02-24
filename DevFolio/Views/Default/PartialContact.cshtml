@@ -1,0 +1,45 @@
+﻿@model List<DevFolio.Models.TblContact>
+
+
+<div class="col-md-6">
+    <div class="title-box-2">
+        <h5 class="title-left">
+            Bana Mesaj Gönderin!
+        </h5>
+    </div>
+    <div>
+        <form action="PartialContact" method="post" role="form" class="contactForm">
+            <div id="sendmessage">Mesajınız İletildi, Teşekkürler :)</div>
+            <div id="errormessage"></div>
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                        <input type="text" name="NameSurname" class="form-control" id="name" placeholder="İsim Soyisim" data-rule="minlen:4" data-msg="Lütfen En Az 4 Karakter Giriniz!" />
+                        <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="Email" id="email" placeholder="Email Adresi" data-rule="email" data-msg="Email Formatına Uygun Olmalıdır!" />
+                        <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="Subject" id="subject" placeholder="Konu" data-rule="minlen:4" data-msg="Lütfen En Az 8 Karakter Giriniz!" />
+                        <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                        <textarea class="form-control" name="Message" rows="5" data-rule="required" data-msg="Mesaj Bölümü Boş Geçilemez!" placeholder="Mesaj"></textarea>
+                        <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="button button-a button-big button-rouded">Gönder</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
