@@ -1,10 +1,12 @@
-﻿@model List<DevFolio.Models.TblSocailMedia>
+﻿﻿@model List<DevFolio.Models.TblSocailMedia>
 
 <div class="socials">
     <ul>
-        @foreach (var item in Model)
-        {
-            <li><a href="@item.RedirectUrl"><span class="ico-circle"><i class="@item.IconUrl"></i></span></a></li>
-        }
+
+            @foreach (var item in Model)
+            {
+                <li><a href="@item.RedirectUrl"><span class="ico-circle"><i class="@item.IconUrl"></i></span></a></li>
+            }
+
     </ul>
 </div>

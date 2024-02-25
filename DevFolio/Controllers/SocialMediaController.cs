@@ -25,6 +25,7 @@ namespace DevFolio.Controllers
         [HttpPost]
         public ActionResult CreateSocialMedia(TblSocailMedia p)
         {
+            p.Status = true;
             db.TblSocailMedia.Add(p);
             db.SaveChanges();
             return RedirectToAction("SocialMediaList");
@@ -36,6 +37,21 @@ namespace DevFolio.Controllers
             db.SaveChanges();
             return RedirectToAction("SocialMediaList");
         }
+        public ActionResult StatusChangeSocialMedia(int id)
+        {
+            var value = db.TblSocailMedia.Find(id);
+            if (value.Status == true)
+            {
+                value.Status = false;
+            }
+            else
+            {
+                value.Status = true;
+            }
+            db.SaveChanges();
+            return RedirectToAction("SocialMediaList");
+        }
+
 
         [HttpGet]
         public ActionResult UpdateSocialMedia(int id)

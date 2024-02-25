@@ -26,8 +26,8 @@
                     <div class="box-shadow-full">
                         <div class="row">
                             <div class="col-md-6">
-                              @Html.Action("PartialProfile","Default")
-                              @Html.Action("PartialSkill", "Default")
+                                @Html.Action("PartialProfile", "Default")
+                                @Html.Action("PartialSkill", "Default")
                             </div>
                             <div class="col-md-6">
                                 <div class="about-me pt-4 pt-md-0">
@@ -36,7 +36,7 @@
                                             Hakkımda
                                         </h5>
                                     </div>
-                                   @Html.Action("PartialAbout", "Default")
+                                    @Html.Action("PartialAbout", "Default")
                                 </div>
                             </div>
                         </div>
@@ -46,24 +46,24 @@
         </div>
     </section>
 
-    <!--/ Section Services Star /-->
     <section id="service" class="services-mf route">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title-box text-center">
                         <h3 class="title-a">
-                            Hizmetlerim
+                            Hizmetler
                         </h3>
-                        <p class="subtitle-a">
-                            İlgilendiğim ve Geliştirmeye Çalıştığım Yönlerim
-                        </p>
-                    <div class="line-mf"></div>
+
+                        <div class="line-mf"></div>
+                    </div>
                 </div>
-             </div>
-        <div class="row">
-                    @Html.Action("PartialService", "Default")
-    </div>
+            </div>
+            <div class="row">
+
+                @Html.Action("PartialService", "Default")
+            </div>
+        </div>
     </section>
     <!--/ Section Services End /-->
 
@@ -95,16 +95,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                   @Html.Action("PartialTestimonial", "Default")
+                    @Html.Action("PartialTestimonial", "Default")
                 </div>
             </div>
         </div>
     </div>
 
-   
+
     <!--/ Section Blog End /-->
     <!--/ Section Contact-Footer Star /-->
-    <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(/Templates/devfolio-master/img/overlay-bg.jpg)">
         <div class="overlay-mf"></div>
         <div class="container">
             <div class="row">
@@ -119,8 +119,10 @@
                                             İletişim
                                         </h5>
                                     </div>
-                                    @Html.Action("PartialAddress","Default")
-                                    @Html.Action("PartialSocial","Default")
+                                    @Html.Action("PartialAddress", "Default")
+                                    <div class="socials">
+                                        @Html.Action("PartialSocial", "Default")
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -133,16 +135,8 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="copyright-box">
-                            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
-                            <div class="credits">
-                                <!--
-                                  All the links in the footer should remain intact.
-                                  You can delete the links only if you purchased the pro version.
-                                  Licensing information: https://bootstrapmade.com/license/
-                                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-                                -->
-                                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                            </div>
+                            <p class="copyright">&copy; Copyright <strong>Talha Yıldız</strong>.</p>
+
                         </div>
                     </div>
                 </div>

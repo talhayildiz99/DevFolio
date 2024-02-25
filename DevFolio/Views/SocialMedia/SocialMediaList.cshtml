@@ -1,4 +1,4 @@
-﻿@model List<DevFolio.Models.TblSocailMedia>
+﻿﻿@model List<DevFolio.Models.TblSocailMedia>
 
 @{
     ViewBag.Title = "SocialMediaList";
@@ -7,25 +7,40 @@
 
 <h2>Sosyal Medya Listesi</h2>
 
-<table class="table table-bordered">
-    <tr>
-        <th>Id</th>
-        <th>Başlık</th>
-        <th>Durum</th>
-        <th>Sil</th>
-        <th>Güncelle</th>
-    </tr>
-
-    @foreach(var item in Model)
-     {
-        <tr>
-            <td>@item.SocailMediaId</td>
-            <td>@item.PlatformName</td>
-            <td>@item.Status</td>
-            <td><a href="/SocialMedia/DeleteSocialMedia/@item.SocailMediaId" class="btn btn-danger">Sil</a></td>
-            <td><a href="/SocialMedia/UpdateSocialMedia/@item.SocailMediaId" class="btn btn-success">Güncelle</a></td>
+<div class="container">
+    <a href="/SocialMedia/CreateSocialMedia/" class="btn btn-info">Yeni Sosyal Medya Girişi</a>
+    <br />
+    <br />
+    <table class="table table-bordered">
+        <tr class="table-secondary">
+            <th>#</th>
+            <th>Başlık</th>
+            <th>Durum</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
         </tr>
-     }
 
-</table>
-<a href="/SocialMedia/CreateSocialMedia/" class="btn btn-info">Yeni Sosyal Medya Girişi</a>
+        @foreach (var item in Model)
+        {
+            string durum = "";
+            if (item.Status == false)
+            {
+                durum = "bg-danger";
+            }
+            else
+            {
+                durum = "bg-secondary";
+            }
+
+            <tr>
+                <td>@item.SocailMediaId</td>
+                <td>@item.PlatformName</td>
+                <td><a href="/SocialMedia/StatusChangeSocialMedia/@item.SocailMediaId"> <span class="badge @durum" style="color:white">@item.Status</span></a></td>
+                <td><a href="/SocialMedia/DeleteSocialMedia/@item.SocailMediaId" class="btn btn-warning">Sil</a></td>
+                <td><a href="/SocialMedia/UpdateSocialMedia/@item.SocailMediaId" class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+
+
+    </table>
+</div>

@@ -623,6 +623,7 @@
     <Content Include="Templates\login-form-20\scss\bootstrap\_utilities.scss" />
     <Content Include="Templates\login-form-20\scss\bootstrap\_variables.scss" />
     <Content Include="Templates\login-form-20\scss\style.scss" />
+    <Content Include="Templates\Talha_Yıldız_CV_.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
