@@ -10,3 +10,4 @@ Oluşturmuş olduğum portfolyome dair bilgilerle birlikte CV'mi indirebileceği
 
 
 ## Veritabanı
+![Screenshot_1](https://github.com/talhayildiz99/DevFolio/assets/84921617/43453152-6a6d-4272-bc1f-b8639d53a6a0)
