@@ -18,7 +18,7 @@ Oluşturmuş olduğum portfolyome dair bilgilerle birlikte CV'mi indirebileceği
 ## Admin Panel
 ![Screenshot_3](https://github.com/talhayildiz99/DevFolio/assets/84921617/6cd07110-ce06-4c72-8f4f-554e58e95aec)
 
-<!-- /TOC -->
+******************************************
 
 ![Screenshot_4](https://github.com/talhayildiz99/DevFolio/assets/84921617/418066f9-745a-4718-bc88-444e90da4d9c)
 
